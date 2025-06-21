@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = ["pyperclip"]
 
 [project.scripts]
-json-viewer = "main:main"
+tjv = "main:main"
 
 [build-system]
 requires = ["hatchling"]
