@@ -1,7 +1,6 @@
 # Terminal JSON Viewer
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A professional command-line tool for viewing and formatting JSON files with various output options. Perfect for developers who work with JSON data in terminal environments.
 
