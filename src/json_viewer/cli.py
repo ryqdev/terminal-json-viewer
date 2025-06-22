@@ -4,7 +4,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any
 
 try:
     import pyperclip
@@ -41,7 +41,7 @@ def get_input_content(args: argparse.Namespace) -> str:
         return sys.stdin.read()
 
 
-def parse_json_content(content: str, extract: bool = False) -> Dict[str, Any]:
+def parse_json_content(content: str, extract: bool = False) -> dict[str, Any]:
     """Parse JSON content with optional extraction."""
     if not content.strip():
         print("Error: No JSON content provided", file=sys.stderr)
@@ -68,7 +68,7 @@ def parse_json_content(content: str, extract: bool = False) -> Dict[str, Any]:
         return json.loads(json_content)
 
 
-def output_result(data: Dict[str, Any], args: argparse.Namespace) -> None:
+def output_result(data: dict[str, Any], args: argparse.Namespace) -> None:
     """Output the formatted result."""
     if args.keys:
         if isinstance(data, dict):

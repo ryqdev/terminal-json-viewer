@@ -8,7 +8,7 @@ install: ## Install the package
 	uv sync
 
 install-dev: ## Install development dependencies
-	uv sync --extra dev
+	uv sync --group dev
 
 test: ## Run tests
 	uv run pytest -v

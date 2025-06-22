@@ -257,6 +257,16 @@ dev = [
     { name = "types-pyperclip" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "black" },
+    { name = "mypy" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "ruff" },
+    { name = "types-pyperclip" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "black", marker = "extra == 'dev'", specifier = ">=23.0.0" },
@@ -268,6 +278,16 @@ requires-dist = [
     { name = "types-pyperclip", marker = "extra == 'dev'", specifier = ">=1.8.0" },
 ]
 provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "black", specifier = ">=25.1.0" },
+    { name = "mypy", specifier = ">=1.16.1" },
+    { name = "pytest", specifier = ">=8.4.1" },
+    { name = "pytest-cov", specifier = ">=6.2.1" },
+    { name = "ruff", specifier = ">=0.12.0" },
+    { name = "types-pyperclip", specifier = ">=1.9.0.20250218" },
+]
 
 [[package]]
 name = "types-pyperclip"
